@@ -1,12 +1,15 @@
 import React from 'react'
 import Visa from '../IMAGES/Visa.png'
 import { Link } from 'react-router-dom'
-
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const Bill = () => {
   return (
+    <div className="">
+      <Navbar/>
     <div className='mr-10'>
-     <div className="bg-white w-[20rem] lg:w-[45rem] md:w-[30rem]  sm:w-[20rem] mt-[10rem] mb-[6rem] rounded-lg p-5 justify-center m-auto  items-center">
+     <div className="bg-white w-[18rem] lg:w-[45rem] md:w-[30rem]  sm:w-[20rem] mt-[10rem] mb-[6rem] rounded-lg p-5 justify-center m-auto  items-center">
       <h1 className='font-bold text-[1.5rem]'>
         Billing info
       </h1>
@@ -20,7 +23,7 @@ const Bill = () => {
          <label htmlFor="name " className='font-bold'>Name <br/>
           <input type="text"
           placeholder=' Your name'
-          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[18rem] mt-5 p-3 rounded-xl bg-slate-100'
+          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[16rem] mt-5 p-3 rounded-xl bg-slate-100'
           />
          </label>
          </form>
@@ -31,7 +34,7 @@ const Bill = () => {
          <label htmlFor="number " className='font-bold'>Phone Number <br/>
           <input type="number"
           placeholder=' Phone number'
-          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[18rem] mt-5 p-3 rounded-xl bg-slate-100'
+          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[16rem] mt-5 p-3 rounded-xl bg-slate-100'
           />
          </label>
          </form>
@@ -44,7 +47,7 @@ const Bill = () => {
          <label htmlFor="name " className='font-bold'>Address <br/>
           <input type="text"
           placeholder='Address'
-          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[18rem] mt-5 p-3 rounded-xl bg-slate-100'
+          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[16rem] mt-5 p-3 rounded-xl bg-slate-100'
           />
          </label>
          </form>
@@ -55,7 +58,7 @@ const Bill = () => {
          <label htmlFor="number " className='font-bold'>Town / City<br/>
           <input type="text"
           placeholder='Town or City'
-          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[18rem] mt-5 p-3 rounded-xl bg-slate-100'
+          className='lg:w-[20rem] md:w-[20rem] sm:w-[19rem] w-[16rem] mt-5 p-3 rounded-xl bg-slate-100'
           />
          </label>
          </form>
@@ -71,6 +74,8 @@ const Bill = () => {
      </div>
 
    
+    </div>
+    <Footer/>
     </div>
   )
 }
